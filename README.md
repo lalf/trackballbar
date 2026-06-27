@@ -69,6 +69,7 @@ TrackBallBarは、「今あるキーボードにトラックボールとスク�
 - レイヤー6: 橙
 - レイヤー7: ピンク
 - レイヤー8: 赤
+<BR>(発光色は変更可能です。)
 
 ## トラックボールサイズの変更方法
 1. ボールカバーを逆時計回りに回し、出っ張りが正面にきたところで上に持ち上げて外します。
@@ -109,6 +110,7 @@ TrackBallBarは、「今あるキーボードにトラックボールとスク�
 - 緑: 90度
 - 青: 180度
 - 赤: 270度
+<BR>(発光色は変更可能です。)
 
 ## DPI調整
 ボタン5とボタン6を同時に押したまま、スクロールホイールを操作することでDPI調整できます。DPIの調整範囲は300-3000DPIです。
@@ -120,6 +122,7 @@ LEDインジケーターが白点滅すれば受理、赤点滅すれば上限/�
 以下の発光色の点灯回数でDPIを確認します。
 - 緑: 1000DPI
 - 青: 100DPI
+<BR>(発光色は変更可能です。)
 
 ## 絶対座標モード／疑似マルチカーソル機能
 絶対座標モードは、通常の相対座標モードと異なり、TrackBallBar内でマウスカーソルの座標を管理します。<BR>
@@ -130,6 +133,7 @@ LEDインジケーターが白点滅すれば受理、赤点滅すれば上限/�
 切り替え時のLEDインジケータの発光色で、どちらのモードか確認できます。
 - 青: 相対座標モード
 - 赤: 絶対座標モード
+<BR>(発光色は変更可能です。)
 
 絶対座標モードでは、疑似マルチカーソル機能が使用できます。
 TrackBallBar内にマウスカーソルの座標を2～5個保持し、切り替えることができます。
@@ -142,6 +146,7 @@ TrackBallBar内にマウスカーソルの座標を2～5個保持し、切り替
 - 3番目: 青
 - 4番目: 水
 - 5番目: 黄
+<BR>(発光色はレイヤー0～5の発光色と同じです。)
 
 絶対座標モードはペン入力の方式でカーソルを操作しています。<BR>
 アプリケーションがペン入力に対応している場合、マウスとペンで異なるカーソルとなり、
@@ -173,41 +178,58 @@ X軸／Y軸ロック機能は、トラックボール操作で、X軸やY軸を�
 切り替え時のLEDインジケータの発光色で、現在の状態が確認できます。
 - アンロック: 青
 - ロック: 赤
+<BR>(発光色は変更可能です。)
 
 ## Vialによるカスタマイズ
 カスタマイズはVial(https://get.vial.today/) で行えます。<BR>
 Vial自体の使用方法の説明はいたしません。
 
-### キーマップ
-TrackBallBarでは、特殊なキーマップになっています。<BR>
-![](imgs/tbb_vial_desc.jpg)
-- TrackBallBar用<BR>
-TrackBallBar用のボタン／スクロールホイールをカスタマイズする領域です。
-- 拡張ユニット用<BR>
-拡張ユニット用のボタン／ホイールをカスタマイズする領域です。<BR>
-拡張ユニットごとに使用する領域が指定されます。
-- 独自Combo用<BR>
-独自コンボ機能を参照してください。
-- 絶対座標モード／疑似マルチカーソル用<BR>
-絶対座標モード／疑似マルチカーソル機能を参照してください。
+### レイアウト
+TrackBallBarでは、複数のユニットがあるため、ユニットごとのレイアウトを用意しています。<BR>
+VialのLayoutタブを選択し、Layoutのリストボックスから、カスタマイズしたい項目を選択します。<BR>
 
-### 初期キーマップ
-- レイヤー0<BR>
-![](imgs/tbb_vial_l0.jpg)
-- レイヤー1<BR>
-![](imgs/tbb_vial_l1.jpg)
-- レイヤー2<BR>
-![](imgs/tbb_vial_l2.jpg)
-- レイヤー3<BR>
-![](imgs/tbb_vial_l3.jpg)
-- レイヤー4<BR>
-![](imgs/tbb_vial_l4.jpg)
-- レイヤー5<BR>
-![](imgs/tbb_vial_l5.jpg)
-- レイヤー6<BR>
-![](imgs/tbb_vial_l6.jpg)
-- レイヤー7<BR>
-![](imgs/tbb_vial_l7.jpg)
+![](imgs/tbb_vial_layout.jpg)
+
+選択できる項目は以下です。<BR>
+
+| 項目名      | カスタマイズ内容 |
+| ---------- | ------------------------------------------------ |
+| Trackball  | TrackBallBar本体のキーマップ |
+| Combo      | TrackBallBar独自のコンボ |
+| Keyboard   | キーボード拡張ユニット |
+| Keypad 4x3 | 4×3キーパッド拡張ユニット |
+| Keypad 5x3 | 5×3キーパッド拡張ユニット |
+| Keypad 6x3 | 6×3キーパッド拡張ユニット |
+| Wheel/Key  | ホイール／キー拡張ユニット |
+| ALL        | キーボード拡張ユニット以外のキーマトリクス、ロータリーエンコーダ |
+| Config     | TrackBallBarの各種パラメータ |
+
+#### Trackball
+![](imgs/tbb_vial_trackball.jpg)
+
+#### Combo
+独自コンボ機能参照
+
+#### Keyboard
+![](imgs/tbb_vial_keyboard.jpg)
+
+#### KeyPad 4x3
+![](imgs/tbb_vial_keypad4x3.jpg)
+
+#### KeyPad 5x3
+![](imgs/tbb_vial_keypad5x3.jpg)
+
+#### KeyPad 6x3
+![](imgs/tbb_vial_keypad6x3.jpg)
+
+#### Wheel/Key
+![](imgs/tbb_vial_wheelkey.jpg)
+
+#### ALL
+![](imgs/tbb_vial_all.jpg)
+
+#### Config
+コンフィグ参照
 
 ### 固有キー
 ![](imgs/tbb_vial_user.jpg)
@@ -237,6 +259,7 @@ UserタブにあるTrackBallBar固有のキーです。
 | PosX       | 疑似マルチカーソル機能の疑似カーソル数の指定用です。通常のキーへの割り当ては無効です。(絶対座標モード／疑似マルチカーソル設定を参照) |
 
 ### 独自コンボ機能
+![](imgs/tbb_vial_combo.jpg)
 QMKによるコンボ機能とは別に、独自にコンボ機能を作成しています。<BR>
 (QMKでは同じキーの同時押しによるコンボができそうになかったため)<BR>
 コンボの配置は以下のようになっています。
@@ -244,27 +267,180 @@ QMKによるコンボ機能とは別に、独自にコンボ機能を作成し�
 ![](imgs/tbb_vial_combo1.jpg)
 ![](imgs/tbb_vial_combo2.jpg)
 
-### 絶対座標モード／疑似マルチカーソル設定
-![](imgs/tbb_vial_scr_mouse.jpg)<BR>
-絶対座標モード／疑似マルチカーソル機能で使用するスクリーンサイズ、疑似マルチカーソル数を設定します。<BR>
+### コンフィグ ###
+![](imgs/tbb_vial_config.jpg)
+TrackBallBarの各種パラメータを設定するレイアウトです。
+それぞれ、各項目の設定内容は以下です。
+
+| 項目      | 設定内容 |
+| ---------- | ------------------------------------------------ |
+| SCR       | 絶対座標モード／疑似マルチカーソル設定参照 |
+| POS       | 絶対座標モード／疑似マルチカーソル設定参照 |
+| LAY       | 指定のレイヤーのLEDカラー(RGB) |
+| ANG       | 指定のレイヤー番号のアングル(0.0度、1.90度、2.180度、3.270度)のLEDカラー(RGB) |
+| DPI       | DPI設定表示(0.100DPI、1.1000DPI)のLEDカラー(RGB) |
+| OK        | OKインジケートのLEDカラー(RGB) |
+| ERR       | ERRORインジケートのLEDカラー(RGB) |
+| COMBO     | コンボ入力の待ち時間(ms) |
+| PUSH      | コンボでなかった場合のキー入力時間(ms) |
+| BLINK     | LEDの点滅間隔(ms) |
+
+数値入力の箇所は、以下のようになります。
+| 入力　      | 設定内容 |
+| ---------- | ------------------------- |
+| 0xaxxx     | xxxを10進数として扱います。 |
+| 0xfxxx     | xxxを16進数として扱います。 |
+
+#### 絶対座標モード／疑似マルチカーソル設定
+絶対座標モード／疑似マルチカーソル機能で使用するスクリーンサイズをSCRに、疑似マルチカーソル数をPOSに設定します。<BR>
 スクリーンサイズに指定できるのは、UserにあるScrXXXXで、それ以外を指定した場合、デフォルト値(1920x1080)になります。<BR>
 ぴったりの値がない場合は、より近い値を指定してください。<BR>
-疑似マルチカーソル数に指定できるのは、UserになるPosXで、それ以外を指定した場合、デフォルト値(2)になります。<BR>
-なお、Layer0の設定値のみ有効です。
+疑似マルチカーソル数に指定できるのは、UserにあるPosXで、それ以外を指定した場合、デフォルト値(2)になります。<BR>
 
-### LEDインジケーターの調整
-![](imgs/tbb_vial_lighting.jpg)
+### 初期キーマップ
+#### Trackball
+- レイヤー0<BR>
+![](imgs/tbb_vial_trackball_L0.jpg)
+- レイヤー1<BR>
+![](imgs/tbb_vial_trackball_L1.jpg)
+- レイヤー2<BR>
+![](imgs/tbb_vial_trackball_L2.jpg)
+- レイヤー3<BR>
+![](imgs/tbb_vial_trackball_L3.jpg)
+- レイヤー4<BR>
+![](imgs/tbb_vial_trackball_L4.jpg)
+- レイヤー5<BR>
+![](imgs/tbb_vial_trackball_L5.jpg)
+- レイヤー6<BR>
+![](imgs/tbb_vial_trackball_L6.jpg)
+- レイヤー7<BR>
+![](imgs/tbb_vial_trackball_L7.jpg)
 
-VialのLightingタブでの調整はできません。<BR>
-効果があるのは、Underglow Effectを"All Off"にすることでのLEDインジケーターの無効化のみです。<BR>
-ただし、以下の操作をするとLEDインジケーターが点灯します。その際には再設定してください。
-- DPIの変更
-- DPI確認
-- トラックボールセンサーの角度変更
-- X軸ロック／アンロック
-- Y軸ロック／アンロック
-- 相対座標モード／絶対座標モードの切り替え
-- 疑似マルチカーソルの切り替え
+#### Combo
+- レイヤー0<BR>
+![](imgs/tbb_vial_combo_L0.jpg)
+- レイヤー1<BR>
+![](imgs/tbb_vial_combo_L1.jpg)
+- レイヤー2<BR>
+![](imgs/tbb_vial_combo_L2.jpg)
+- レイヤー3<BR>
+![](imgs/tbb_vial_combo_L3.jpg)
+- レイヤー4<BR>
+![](imgs/tbb_vial_combo_L4.jpg)
+- レイヤー5<BR>
+![](imgs/tbb_vial_combo_L5.jpg)
+- レイヤー6<BR>
+![](imgs/tbb_vial_combo_L6.jpg)
+- レイヤー7<BR>
+![](imgs/tbb_vial_combo_L7.jpg)
+
+#### KeyPad 4x3
+- レイヤー0<BR>
+![](imgs/tbb_vial_keypad4x3_L0.jpg)
+- レイヤー1<BR>
+![](imgs/tbb_vial_keypad4x3_L1.jpg)
+- レイヤー2<BR>
+![](imgs/tbb_vial_keypad4x3_L2.jpg)
+- レイヤー3<BR>
+![](imgs/tbb_vial_keypad4x3_L3.jpg)
+- レイヤー4<BR>
+![](imgs/tbb_vial_keypad4x3_L4.jpg)
+- レイヤー5<BR>
+![](imgs/tbb_vial_keypad4x3_L5.jpg)
+- レイヤー6<BR>
+![](imgs/tbb_vial_keypad4x3_L6.jpg)
+- レイヤー7<BR>
+![](imgs/tbb_vial_keypad4x3_L7.jpg)
+
+#### KeyPad 5x3
+- レイヤー0<BR>
+![](imgs/tbb_vial_keypad5x3_L0.jpg)
+- レイヤー1<BR>
+![](imgs/tbb_vial_keypad5x3_L1.jpg)
+- レイヤー2<BR>
+![](imgs/tbb_vial_keypad5x3_L2.jpg)
+- レイヤー3<BR>
+![](imgs/tbb_vial_keypad5x3_L3.jpg)
+- レイヤー4<BR>
+![](imgs/tbb_vial_keypad5x3_L4.jpg)
+- レイヤー5<BR>
+![](imgs/tbb_vial_keypad5x3_L5.jpg)
+- レイヤー6<BR>
+![](imgs/tbb_vial_keypad5x3_L6.jpg)
+- レイヤー7<BR>
+![](imgs/tbb_vial_keypad5x3_L7.jpg)
+
+#### KeyPad 6x3
+- レイヤー0<BR>
+![](imgs/tbb_vial_keypad6x3_L0.jpg)
+- レイヤー1<BR>
+![](imgs/tbb_vial_keypad6x3_L1.jpg)
+- レイヤー2<BR>
+![](imgs/tbb_vial_keypad6x3_L2.jpg)
+- レイヤー3<BR>
+![](imgs/tbb_vial_keypad6x3_L3.jpg)
+- レイヤー4<BR>
+![](imgs/tbb_vial_keypad6x3_L4.jpg)
+- レイヤー5<BR>
+![](imgs/tbb_vial_keypad6x3_L5.jpg)
+- レイヤー6<BR>
+![](imgs/tbb_vial_keypad6x3_L6.jpg)
+- レイヤー7<BR>
+![](imgs/tbb_vial_keypad6x3_L7.jpg)
+
+#### Wheel/Key
+- レイヤー0<BR>
+![](imgs/tbb_vial_wheelkey_L0.jpg)
+- レイヤー1<BR>
+![](imgs/tbb_vial_wheelkey_L1.jpg)
+- レイヤー2<BR>
+![](imgs/tbb_vial_wheelkey_L2.jpg)
+- レイヤー3<BR>
+![](imgs/tbb_vial_wheelkey_L3.jpg)
+- レイヤー4<BR>
+![](imgs/tbb_vial_wheelkey_L4.jpg)
+- レイヤー5<BR>
+![](imgs/tbb_vial_wheelkey_L5.jpg)
+- レイヤー6<BR>
+![](imgs/tbb_vial_wheelkey_L6.jpg)
+- レイヤー7<BR>
+![](imgs/tbb_vial_wheelkey_L7.jpg)
+
+#### ALL
+- レイヤー0<BR>
+![](imgs/tbb_vial_all_L0.jpg)
+- レイヤー1<BR>
+![](imgs/tbb_vial_all_L1.jpg)
+- レイヤー2<BR>
+![](imgs/tbb_vial_all_L2.jpg)
+- レイヤー3<BR>
+![](imgs/tbb_vial_all_L3.jpg)
+- レイヤー4<BR>
+![](imgs/tbb_vial_all_L4.jpg)
+- レイヤー5<BR>
+![](imgs/tbb_vial_all_L5.jpg)
+- レイヤー6<BR>
+![](imgs/tbb_vial_all_L6.jpg)
+- レイヤー7<BR>
+![](imgs/tbb_vial_all_L7.jpg)
+
+#### config
+- レイヤー0<BR>
+![](imgs/tbb_vial_config_L0.jpg)
+- レイヤー1<BR>
+![](imgs/tbb_vial_config_L1.jpg)
+- レイヤー2<BR>
+![](imgs/tbb_vial_config_L2.jpg)
+- レイヤー3<BR>
+![](imgs/tbb_vial_config_L3.jpg)
+- レイヤー4<BR>
+![](imgs/tbb_vial_config_L4.jpg)
+- レイヤー5<BR>
+![](imgs/tbb_vial_config_L5.jpg)
+- レイヤー6<BR>
+![](imgs/tbb_vial_config_L6.jpg)
+- レイヤー7<BR>
+![](imgs/tbb_vial_config_L7.jpg)
 
 ## 拡張ユニット自作向け情報
 ### コネクタ
